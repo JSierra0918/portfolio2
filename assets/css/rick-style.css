@@ -1,0 +1,56 @@
+.cont {
+    position: relative;
+}
+
+.overlay {
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    z-index:1;
+    transform: translate(-50%);
+}
+
+#myVideo{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+#hello {
+    font-size: 2em;
+    animation: scale .75s infinite ease-in-out;
+    color: yellow;
+    z-index: 100;
+}
+
+.flex {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and( max-width: 600px){
+    #hello {
+        font-size: .75em;
+    }
+}
