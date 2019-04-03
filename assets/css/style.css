@@ -1,0 +1,39 @@
+*{
+    font-size: 20px;
+}
+
+.black-top {
+    background-color: black;
+    height: 20%;
+}
+
+.flex-body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:pink;
+    height: 100vh;
+    width: 100%;
+}
+
+.flex-contet {
+    width: 100%;
+    display: flex;
+    background-color: purple;
+    justify-content: space-around;
+}
+
+
+.portfolio {
+    background-color: yellow;
+    width: 60%;
+    height: 35em;
+    border-radius: 10px;
+}
+
+.about-me {
+    width: 20em;
+    background-color: red;
+    border-radius: 10px;
+}
