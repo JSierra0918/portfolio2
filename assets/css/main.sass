@@ -1,0 +1,74 @@
+$colorTheme: #005dff;
+$plainBG: black;
+$aboutMeBG: #e3e3e3;
+
+* 
+    font-size: 20px
+
+body 
+    background-color: $plainBG
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+.flex-body-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color:pink
+    width: 100%
+    height: 90%
+
+    .flex-contet
+        width: 100%
+        display: flex
+        background-color: purple
+        justify-content: space-around
+
+        .portfolio
+            background-color: yellow
+            width: 60%
+            height: 35em
+            border-radius: 10px
+            display: flex
+
+            .left-arrow
+                background-color: cyan  
+                flex: 1
+            
+            .right-arrow
+                background-color: chocolate
+                flex: 1
+
+            .components-container
+                background-color: rgb(18, 199, 87)
+                flex: 3
+                flex-basis: 60%
+
+        .about-me 
+            width: 20em
+            background-color: $aboutMeBG
+            border-radius: 10px
+
+            h3
+                font-weight: bolder
+                font-size: 2em
+                text-align: center
+                text-decoration-line: underline
+                text-decoration-style: wavy
+
+
+            .profile-img
+                display: block
+                margin-left: auto
+                margin-right: auto
+                width: 8em
+            
+            .circle-clip
+                clip-path: circle(40% at 50% 50%)
+
+            p
+                padding: 20px
+              
