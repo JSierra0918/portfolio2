@@ -1,6 +1,8 @@
 $colorTheme: #005dff;
-$plainBG: black;
-$aboutMeBG: #e3e3e3;
+$plainBG: #333;
+$aboutMeBG: #ffffff;
+$arrowBG: #1313137d;
+
 
 * 
     font-size: 20px
@@ -35,11 +37,12 @@ body
             display: flex
 
             .left-arrow
-                background-color: cyan  
+                background-color: $arrowBG  
                 flex: 1
+
             
             .right-arrow
-                background-color: chocolate
+                background-color: $arrowBG
                 flex: 1
 
             .components-container
@@ -71,4 +74,4 @@ body
 
             p
                 padding: 20px
-              
+                line-height: 1.5em

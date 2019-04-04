@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,14 +55,14 @@ body {
 }
 
 .flex-body-container .flex-contet .portfolio .left-arrow {
-  background-color: cyan;
+  background-color: #1313137d;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
 .flex-body-container .flex-contet .portfolio .right-arrow {
-  background-color: chocolate;
+  background-color: #1313137d;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -79,7 +79,7 @@ body {
 
 .flex-body-container .flex-contet .about-me {
   width: 25em;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
   border-radius: 10px;
 }
 
@@ -107,5 +107,6 @@ body {
 
 .flex-body-container .flex-contet .about-me p {
   padding: 20px;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=main.css.map */
