@@ -1,7 +1,3 @@
-* {
-  font-size: 20px;
-}
-
 body {
   background-color: #333;
   display: -webkit-box;
@@ -32,6 +28,8 @@ body {
           align-items: center;
   width: 100%;
   height: 90%;
+  background: url("../images/unnamed.jpg") no-repeat;
+  background-size: cover;
 }
 
 .flex-body-container .flex-contet {
@@ -39,13 +37,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: purple;
+  background-color: #0000005e;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .flex-body-container .flex-contet .portfolio {
-  background-color: yellow;
   width: 60%;
   height: 35em;
   border-radius: 10px;
@@ -55,26 +52,53 @@ body {
 }
 
 .flex-body-container .flex-contet .portfolio .left-arrow {
-  background-color: #1313137d;
+  background-color: #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 8px 0px 0px 8px;
+  border-right: 2px solid black;
 }
 
 .flex-body-container .flex-contet .portfolio .right-arrow {
-  background-color: #1313137d;
+  background-color: #fff;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border-radius: 0px 8px 8px 0px;
+  border-left: 2px solid black;
 }
 
 .flex-body-container .flex-contet .portfolio .components-container {
-  background-color: #12c757;
+  background-color: #fff;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
+}
+
+.flex-body-container .flex-contet .portfolio .components-container h1 {
+  text-align: center;
+  font-size: 3em;
+}
+
+.flex-body-container .flex-contet .portfolio .components-container .component {
+  max-width: 200px;
+  width: 100%;
+  background: aquamarine;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.flex-body-container .flex-contet .portfolio .components-container .component .comp-link {
+  text-decoration: none;
+  font-weight: bolder;
+  color: gray;
+}
+
+.flex-body-container .flex-contet .portfolio .components-container .component .comp-link:hover {
+  color: darkgray;
 }
 
 .flex-body-container .flex-contet .about-me {
