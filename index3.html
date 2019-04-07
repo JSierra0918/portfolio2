@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style3.css">
     <title>Jorge Sierra</title>
 </head>
@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-    <section class="about-me-flex">
+    <section class="about-me-flex" id="aboutMe">
         <div class="about-me-text">
             <h1>Jorge Sierra</h1>
             <h2>Web Developer</h2>
@@ -51,13 +51,35 @@
         </div>
     </section>
 
+    <section class="portfolio" id="porfolio">
+        <div class="portfolio-flex">
+            <div class="portfolio-component">
+                <div class="port-title">
+                    <img src="./assets/images/crystal.png" alt="">
+                    <h3>Crystal Counter</h3>
+                    <p>At the start of the game each crystal is asigned a new value. The goal is to click on each crystal until you match the number.</p>
+                </div>
+                <div class="port-links">
+                   <a href="https://github.com/JSierra0918/unit-4-game"><i class="fab fa-github"></i>  Github Projects</a>
+                   <a href="https://jsierra0918.github.io/unit-4-game/"><i class="fas fa-globe"></i> .io</a>
+                </div>
+                <div class="languages-used">
+                        <i class="fab fa-js"> .JS</i>
+                        <i class="fab fa-html5"> HTML 5</i>
+                        <i class="fab fa-css3-alt"> CSS 3</i>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="form-container">
+        <h2 id="contact">Contact Me</h2>
         <form class="form" id="contactForm">
-            <input type="text" name="name" placeholder="Enter name...">
-            <input type="email" name="email" id="email" placeholder="Enter email...">
-            <textarea name="textArea" id="" cols="30" rows="10" placeholder="message.."></textarea>
-            <input type="button" value="Submit">
-        </form>     
+            <div class="input-wrapper"><input type="text" name="name" placeholder="Enter name...">
+                <input type="email" name="email" id="email" placeholder="Enter email..."></div>
+            <textarea name="textArea" id="" cols="30" rows="10" placeholder="Message.."></textarea>
+            <input type="button" value="Submit" class="button">
+        </form>
     </section>
 </body>
 
