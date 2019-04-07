@@ -83,12 +83,25 @@ body {
   font-size: 3em;
 }
 
+.flex-body-container .flex-contet .portfolio .components-container .component-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 81%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
 .flex-body-container .flex-contet .portfolio .components-container .component {
   max-width: 200px;
   width: 100%;
   background: aquamarine;
   text-align: center;
   border-radius: 3px;
+  height: 4em;
 }
 
 .flex-body-container .flex-contet .portfolio .components-container .component .comp-link {

@@ -1,0 +1,107 @@
+body {
+  font-size: 18px;
+  color: #000;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header nav {
+  width: 100%;
+}
+
+ul.ul-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+ul.ul-flex li {
+  margin: 10px 0;
+}
+
+ul.ul-flex li a {
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.8;
+}
+
+ul.ul-flex li a:hover {
+  color: #505050;
+}
+
+.active {
+  border-bottom: 1px solid transparent;
+}
+
+section.about-me-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5em;
+  padding-left: 2em;
+}
+
+section.about-me-flex .about-me-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-right: 2em;
+}
+
+section.about-me-flex .about-me-text h1 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section.about-me-flex .about-me-text p {
+  font-size: .9em;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+section.about-me-flex .about-me-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about-me-flex .about-me-img .profile-img {
+  width: 100%;
+  max-width: 15em;
+}
+
+.circle-clip {
+  -webkit-clip-path: circle(40% at 50% 50%);
+          clip-path: circle(40% at 50% 50%);
+}
+
+.form-container {
+  padding: 2.5rem;
+}
+/*# sourceMappingURL=style3.css.map */

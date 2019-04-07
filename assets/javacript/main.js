@@ -1,9 +1,10 @@
 $(document).ready(() => {
 
     var numberOfItems = $(".component-area .component").length;
-    var limitPerPage = 1;
+    var limitPerPage = 5;
     var totalPages = Math.round(numberOfItems / limitPerPage);
-    // var currentPage =1;
+    var currentPage =1;
+
     //Limit the number of components that will be displayed per page
     $(".component-area .component").slice(Math.ceil(limitPerPage)).hide();
 
@@ -12,6 +13,7 @@ $(document).ready(() => {
     for (var i = 1; i <= totalPages; i++) {
         //Append a componnet area for each page that exists.
         $("#compContainer").append(` <div class="component-area"></div>`);
+        page++;
     }
 
     //When you click on an arrow, go to the next page
@@ -36,3 +38,4 @@ $(document).ready(() => {
 // //create the component
 // $(".component-area").append(component);
 });
+
