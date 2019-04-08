@@ -2,6 +2,8 @@ body {
   font-size: 18px;
   color: #000;
   font-family: 'Montserrat', sans-serif;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header {
@@ -71,10 +73,30 @@ section.about-me-flex .about-me-text h1 {
   margin-bottom: 10px;
 }
 
+section.about-me-flex .about-me-text h2 {
+  font-size: 2em;
+}
+
 section.about-me-flex .about-me-text p {
   font-size: .9em;
   font-weight: 500;
   line-height: 1.4em;
+}
+
+section.about-me-flex .about-me-text .resume-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.about-me-flex .about-me-text .resume-flex a {
+  color: #000;
+}
+
+section.about-me-flex .about-me-text .resume-flex a:hover {
+  color: #c1ce00;
 }
 
 section.about-me-flex .about-me-img {
@@ -128,7 +150,7 @@ section.about-me-flex .about-me-img .profile-img {
 
 .portfolio .portfolio-flex h2 {
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   text-decoration: underline;
 }
 
@@ -177,7 +199,7 @@ section.about-me-flex .about-me-img .profile-img {
 }
 
 .portfolio .portfolio-flex .portfolio-component .port-links a {
-  color: black;
+  color: #000;
   padding: 5px;
 }
 
@@ -214,6 +236,10 @@ section.about-me-flex .about-me-img .profile-img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.form-container h2 {
+  font-size: 2em;
 }
 
 .form-container form#contactForm {
