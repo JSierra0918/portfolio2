@@ -13,14 +13,14 @@ body {
     }
 }
 
-ul.ul-flex{
+ul.ul-flex {
     display: flex;
     text-decoration: none;
     color: #000;
     justify-content: space-around;
     list-style-type: none;
-    
-    li{
+
+    li {
         margin: 10px 0;
 
         a {
@@ -88,10 +88,18 @@ section.about-me-flex {
     margin-top: 55px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     .portfolio-flex {
         width: 90%;
         display: flex;
+
+        h2 {
+            text-align: center;
+            font-size: 3em;
+            text-decoration: underline;
+        }
 
         .portfolio-component {
             width: 20em;
@@ -116,7 +124,7 @@ section.about-me-flex {
                 }
             }
 
-            .port-links{
+            .port-links {
                 display: flex;
                 justify-content: space-between;
                 padding: 5px;
@@ -128,7 +136,7 @@ section.about-me-flex {
                     padding: 5px;
 
                     &:hover {
-                        color: rgb(221, 235, 20);
+                        color: #c1ce00;
                     }
                 }
             }
@@ -137,10 +145,6 @@ section.about-me-flex {
                 display: flex;
                 justify-content: space-around;
                 margin-top: 8px;
-
-                fa-js{
-                    color: #f7df1e;
-                }
             }
         }
     }

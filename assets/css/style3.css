@@ -110,6 +110,13 @@ section.about-me-flex .about-me-img .profile-img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio .portfolio-flex {
@@ -117,6 +124,12 @@ section.about-me-flex .about-me-img .profile-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.portfolio .portfolio-flex h2 {
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline;
 }
 
 .portfolio .portfolio-flex .portfolio-component {
@@ -169,7 +182,7 @@ section.about-me-flex .about-me-img .profile-img {
 }
 
 .portfolio .portfolio-flex .portfolio-component .port-links a:hover {
-  color: #ddeb14;
+  color: #c1ce00;
 }
 
 .portfolio .portfolio-flex .portfolio-component .languages-used {
@@ -179,10 +192,6 @@ section.about-me-flex .about-me-img .profile-img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 8px;
-}
-
-.portfolio .portfolio-flex .portfolio-component .languages-used fa-js {
-  color: #f7df1e;
 }
 
 .form-container {
