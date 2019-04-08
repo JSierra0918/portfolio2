@@ -40,10 +40,15 @@ ul.ul-flex li a {
   text-decoration: none;
   color: #000;
   opacity: 0.8;
+  -webkit-transition: 3s all ease-in;
+  transition: 3s all ease-in;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
 }
 
 ul.ul-flex li a:hover {
   color: #505050;
+  text-decoration: underline;
 }
 
 .active {
@@ -56,6 +61,7 @@ section.about-me-flex {
   display: flex;
   padding-top: 5em;
   padding-left: 2em;
+  height: 100vh;
 }
 
 section.about-me-flex .about-me-text {
@@ -68,13 +74,13 @@ section.about-me-flex .about-me-text {
 section.about-me-flex .about-me-text h1 {
   text-align: left;
   font-weight: 600;
-  font-size: 3em;
+  font-size: 4em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 section.about-me-flex .about-me-text h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 section.about-me-flex .about-me-text p {
@@ -87,12 +93,16 @@ section.about-me-flex .about-me-text .resume-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 section.about-me-flex .about-me-text .resume-flex a {
   color: #000;
+  margin: 5px;
 }
 
 section.about-me-flex .about-me-text .resume-flex a:hover {
@@ -109,13 +119,11 @@ section.about-me-flex .about-me-img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 section.about-me-flex .about-me-img .profile-img {
-  width: 100%;
+  width: 20em;
+  height: 20em;
   max-width: 15em;
 }
 
@@ -141,28 +149,46 @@ section.about-me-flex .about-me-img .profile-img {
           align-items: center;
 }
 
+.portfolio h2 {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 3em;
+  text-decoration: underline;
+}
+
 .portfolio .portfolio-flex {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.portfolio .portfolio-flex h2 {
-  text-align: center;
-  font-size: 2em;
-  text-decoration: underline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolio .portfolio-flex .portfolio-component {
   width: 20em;
-  background: #f8eeee;
+  background: #f5f8ee;
   overflow: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 5px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio .portfolio-flex .portfolio-component:hover {
+  background-color: #f1d6c0;
 }
 
 .portfolio .portfolio-flex .portfolio-component .port-title {
@@ -201,10 +227,13 @@ section.about-me-flex .about-me-img .profile-img {
 .portfolio .portfolio-flex .portfolio-component .port-links a {
   color: #000;
   padding: 5px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .portfolio .portfolio-flex .portfolio-component .port-links a:hover {
   color: #c1ce00;
+  font-size: 1.1em;
 }
 
 .portfolio .portfolio-flex .portfolio-component .languages-used {
@@ -214,10 +243,12 @@ section.about-me-flex .about-me-img .profile-img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.form-container {
-  padding: 2.5rem;
+.portfolio .portfolio-flex .portfolio-component .languages-used i {
+  margin: 5px;
 }
 
 .form-container {
@@ -231,7 +262,6 @@ section.about-me-flex .about-me-img .profile-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -239,11 +269,11 @@ section.about-me-flex .about-me-img .profile-img {
 }
 
 .form-container h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .form-container form#contactForm {
-  background: pink;
+  background: #e2e2e2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +304,7 @@ section.about-me-flex .about-me-img .profile-img {
   margin-bottom: 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 40%;
+  width: 49%;
 }
 
 .form-container form#contactForm .button {
@@ -301,5 +331,32 @@ section.about-me-flex .about-me-img .profile-img {
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (max-width: 860px) {
+  section.about-me-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-container form#contactForm {
+    width: 100%;
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=style3.css.map */

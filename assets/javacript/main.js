@@ -33,16 +33,17 @@ $(document).ready(() => {
 
     var scrollLink = $(".scroll");
 
-    $(document).on("click", ".scroll", (params) => {
+    $(document).on("click", ".scroll", (event) => {
 
         event.preventDefault();
 
         console.log( $(this.hash));
-
         console.log($(this).attr("href"));
+
+
         $("body, html").animate({
             scrollTop: $(this.hash).offset().top
-        });
+        }, 1000);
 
 
         // var linkHref = $(this).attr('href');

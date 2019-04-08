@@ -2,7 +2,8 @@
 $textColor: #000;
 $linkColor: #000;
 $bgColor: #fff;
-$h2Size: 2em;
+$h1Size: 4em;
+$h2Size: 3em;
 
 body {
     font-size: 18px;
@@ -36,9 +37,12 @@ ul.ul-flex {
             text-decoration: none;
             color: #000;
             opacity: 0.8;
+            transition: 3s all ease-in;
+            transform-origin: center bottom;
 
             &:hover {
                 color: rgb(80, 80, 80);
+                text-decoration: underline;
             }
         }
     }
@@ -53,6 +57,7 @@ section.about-me-flex {
     display: flex;
     padding-top: 5em;
     padding-left: 2em;
+    height: 100vh;
 
     .about-me-text {
         flex: 1;
@@ -61,7 +66,7 @@ section.about-me-flex {
         h1 {
             text-align: left;
             font-weight: 600;
-            font-size: 3em;
+            font-size: $h1Size;
             margin-top: 10px;
             margin-bottom: 10px;
         }
@@ -79,10 +84,12 @@ section.about-me-flex {
         .resume-flex {
 
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+            flex-wrap: wrap;
 
             a {
                 color:$linkColor;
+                margin: 5px;
 
                 &:hover {
                     color: #c1ce00;
@@ -95,10 +102,10 @@ section.about-me-flex {
         flex: 1;
         display: flex;
         justify-content: center;
-        align-items: center;
 
         .profile-img {
-            width: 100%;
+            width:20em;
+            height: 20em;
             max-width: 15em;
         }
     }
@@ -116,24 +123,34 @@ section.about-me-flex {
     flex-direction: column;
     align-items: center;
 
+    h2 {
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        font-size: $h2Size;
+        text-decoration: underline;
+    }
+
     .portfolio-flex {
         width: 90%;
         display: flex;
-
-        h2 {
-            text-align: center;
-            font-size: $h2Size;
-            text-decoration: underline;
-        }
+        flex-wrap: wrap;
 
         .portfolio-component {
             width: 20em;
-            background: #f8eeee;
+            background: #f5f8ee;
             overflow: hidden;
             box-sizing: border-box;
             margin: 5px;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:hover {
+                background-color: #f1d6c0;
+            }
 
             .port-title {
                 display: flex;
@@ -159,10 +176,12 @@ section.about-me-flex {
                 a {
                     color: $linkColor;
                     padding: 5px;
+                    transition: all .3s ease-in-out;
 
-                    &:hover {
-                        color: #c1ce00;
-                    }
+                        &:hover {
+                            color: #c1ce00;
+                            font-size: 1.1em;
+                        }
                 }
             }
 
@@ -170,6 +189,11 @@ section.about-me-flex {
                 display: flex;
                 justify-content: space-around;
                 margin-top: 8px;
+                flex-wrap: wrap;
+
+                i {
+                    margin: 5px;
+                }
             }
         }
     }
@@ -179,14 +203,9 @@ section.about-me-flex {
 
 .form-container {
     padding: 2.5rem;
-}
-
-.form-container {
-    padding: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     flex-direction: column;
 
     h2 {
@@ -194,7 +213,7 @@ section.about-me-flex {
     }
 
     form#contactForm {
-        background: pink;
+        background: #e2e2e2;
         display: flex;
         flex-direction: column;
         width: 70%;
@@ -212,7 +231,7 @@ section.about-me-flex {
                 padding: 10px 20px;
                 margin-bottom: 5px;
                 box-sizing: border-box;
-                width: 40%;
+                width: 49%;
             }
         }
 
@@ -239,5 +258,25 @@ section.about-me-flex {
             padding: 10px;
             box-sizing: border-box;
         }
+    }
+}
+
+@media screen and (max-width: 860px){
+
+    section.about-me-flex {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    .portfolio-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container form#contactForm{
+        width: 100%;
+        padding: 10px;
     }
 }
