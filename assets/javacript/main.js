@@ -33,11 +33,19 @@ $(document).ready(() => {
 
     var scrollLink = $(".scroll");
 
-    // $(".scroll").click( (event) => {
-    //     event.preventDefault();
-    //         console.log($(this).attr("href"));
+    var header = $(".header nav");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            header.addClass("scrolled");
+          $(".header nav ul.ul-flex li a").css("color", "#fff");
+        } else {
+            header.removeClass("scrolled");
+            $(".header nav ul.ul-flex li a").css("color", "#000");
+        }
+    });
 
-    // })
     $(document).on("click", ".scroll", (event) => {
 
         event.preventDefault();
